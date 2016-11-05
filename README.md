@@ -12,7 +12,7 @@ Kick start for front-end applications.
     - Importing local class names
     - SourceMaps
     - ... [more][css-loader]
-  - Adds CSS to the DOM by injecting a <style> tag with [Style loader][style-loader]
+  - Adds CSS to the DOM by injecting a `<style>` tag with [Style loader][style-loader]
   - CSS & SCSS support
 
 
