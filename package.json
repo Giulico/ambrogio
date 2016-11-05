@@ -1,8 +1,8 @@
 {
-  "name": "boilerplate",
+  "name": "Ambrogio",
   "version": "0.0.1",
   "description": "Webpack 2 Boilerplate",
-  "main": "''",
+  "main": "",
   "dependencies": {
     "normalize.css": "^5.0.0"
   },
