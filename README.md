@@ -1,7 +1,7 @@
-#Ambrogio
+# Ambrogio
 Kick start for front-end applications.
 
-##What's included
+## What's included
   - Webpack 2
   - Babel compiler for writing next generation JavaScript
   - CSS Loader
@@ -15,8 +15,8 @@ Kick start for front-end applications.
   - Adds CSS to the DOM by injecting a `<style>` tag with [Style loader][style-loader]
   - CSS & SCSS support
 
-##Getting started
-###Start
+## Getting started
+### Start
 Run the project.
 
 ```
@@ -24,7 +24,7 @@ npm start
 ```
 then point the browser to [http://localhost:8080/][localhost]
 
-###Build
+### Build
 Build the project without serve it.
 
 ```
