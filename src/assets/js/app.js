@@ -1,3 +1,3 @@
 import style from '../stylesheet/main.css';
 
-console.log('test test', style);
+console.log('hello world!', style);
