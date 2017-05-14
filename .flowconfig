@@ -1,0 +1,10 @@
+[ignore]
+<PROJECT_ROOT>
+
+[include]
+<PROJECT_ROOT>/src/assets/js
+
+[libs]
+
+[options]
+emoji=true

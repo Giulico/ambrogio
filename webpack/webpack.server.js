@@ -30,8 +30,13 @@ config.plugins.unshift(
 const compiler = webpack(config);
 const server = new WebpackDevServer(compiler, {
     public: address,
+    clientLogLevel: 'error',
+    compress: false,
     inline: true,
     hot: true,
+    stats: {
+        colors: true
+    },
     headers: {
         'Access-Control-Allow-Origin': `http://${address}:${port}`,
         'Access-Control-Allow-Headers': 'X-Requested-With'
