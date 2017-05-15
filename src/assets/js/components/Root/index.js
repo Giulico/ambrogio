@@ -25,4 +25,6 @@ const Root = () => (
     </div>
 );
 
+cliackHandler(2);
+
 export default Root;

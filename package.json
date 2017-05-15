@@ -24,6 +24,7 @@
     "babel-preset-stage-1": "^6.24.1",
     "cross-env": "5.0.0",
     "css-loader": "0.28.1",
+    "empty": "^0.10.1",
     "eslint": "3.19.0",
     "eslint-config-airbnb": "14.1.0",
     "eslint-import-resolver-webpack": "^0.8.1",
