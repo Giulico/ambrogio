@@ -104,7 +104,6 @@ log
 node_modules
 flow-typed
 styleguide
-doc
 coverage
 public/*
 public/

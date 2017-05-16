@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import {AppContainer} from 'react-hot-loader';
 
 // First child component
-import Root from './components/Root';
+import Root from './containers/Root';
 
 // @see https://github.com/gaearon/react-hot-boilerplate/pull/61#issuecomment-254467020
 ReactDOM.render(
@@ -18,9 +18,9 @@ if (__PRODUCTION__ === false) {
 
     if (module.hot) {
 
-        module.hot.accept('./components/Root', () => {
+        module.hot.accept('./containers/Root', () => {
 
-            const RootContainer = require('./components/Root').default; //eslint-disable-line global-require
+            const RootContainer = require('./containers/Root').default; //eslint-disable-line global-require
 
             ReactDOM.render(
                 <AppContainer>

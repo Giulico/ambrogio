@@ -77,14 +77,20 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.js$/,
-                use: [{
-                    loader: 'babel-loader',
-                    options: {
-                        // webpack understands the native import syntax, and uses it for tree shaking
-                        presets: [['es2015', {modules: false}]]
+                test: /\.md$/,
+                use: [
+                    {
+                        loader: 'html-loader'
+                    },
+                    {
+                        loader: 'markdown-loader'
                     }
-                }]
+                ]
+            },
+            {
+                test: /\.js$/,
+                exclude: /(node_modules)/,
+                loader: 'babel-loader'
             },
             {
                 test: /\.(css|scss)$/,
@@ -147,7 +153,8 @@ module.exports = {
         },
         modules: [
             'node_modules',
-            resolve(__dirname, '../src/assets/stylesheet')
+            resolve(__dirname, '../src/assets/stylesheet'),
+            resolve(__dirname, '../src/assets/js')
         ]
     }
 
