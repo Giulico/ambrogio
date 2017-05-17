@@ -4,6 +4,16 @@
   "description": "Ambrogio - Webpack 2 Boilerplate",
   "author": "Giulio Collesei <giuliocollesei@gmail.com>",
   "main": "src/assets/js/app.js",
+  "scripts": {
+    "start": "npm run clean && npm run server",
+    "clean": "rimraf dist",
+    "server": "node ./webpack/webpack.server.js",
+    "build": "npm run clean && webpack --config ./webpack/webpack.config.js --color",
+    "production": "npm run clean && cross-env NODE_ENV=production webpack --config ./webpack/webpack.config.js --color",
+    "documentation": "documentation build ./src/assets/js/**/utils.js --shallow -f md -o ./docs/utils.md",
+    "styleguide": "npm run documentation && styleguidist server",
+    "styleguide:build": "styleguidist build"
+  },
   "dependencies": {
     "babel-polyfill": "^6.23.0",
     "normalize.css": "7.0.0",
@@ -34,6 +44,7 @@
     "babel-preset-stage-1": "^6.24.1",
     "cross-env": "5.0.0",
     "css-loader": "0.28.1",
+    "documentation": "^4.0.0-rc.1",
     "empty": "^0.10.1",
     "eslint": "3.19.0",
     "eslint-config-airbnb": "14.1.0",
@@ -60,15 +71,6 @@
     "style-loader": "0.17.0",
     "webpack": "2.5.1",
     "webpack-dev-server": "2.4.5"
-  },
-  "scripts": {
-    "start": "npm run clean && npm run server",
-    "clean": "rimraf dist",
-    "server": "node ./webpack/webpack.server.js",
-    "build": "npm run clean && webpack --config ./webpack/webpack.config.js --color",
-    "production": "npm run clean && cross-env NODE_ENV=production webpack --config ./webpack/webpack.config.js --color",
-    "styleguide": "styleguidist server",
-    "styleguide:build": "styleguidist build"
   },
   "license": "ISC"
 }

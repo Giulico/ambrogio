@@ -16,6 +16,10 @@ module.exports = {
                 {
                     name: 'Components',
                     components: './src/assets/js/components/**/*.js'
+                },
+                {
+                    name: 'Utilities',
+                    content: './docs/utils.md'
                 }
             ]
         }
