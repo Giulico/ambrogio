@@ -38,9 +38,8 @@ class Root extends Component {
     /**
      * Log a descriptor and the click event object
      * @public
-     * @param {SyntheticEvent} e The react `SyntheticEvent`
      */
-    buttonClickHandler(e) {
+    buttonClickHandler(e: Object) {
         console.log('Button click handler', e);
     }
 
