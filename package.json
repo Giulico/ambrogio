@@ -1,6 +1,6 @@
 {
   "name": "ambrogio",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Ambrogio - Webpack 2 Boilerplate",
   "author": "Giulio Collesei <giuliocollesei@gmail.com>",
   "main": "src/assets/js/app.js",
