@@ -1,3 +1,4 @@
+
 ### Table of Contents
 
 -   [log](#log)
@@ -9,7 +10,7 @@ Shorcuts for console loggings
 
 **Parameters**
 
--   `message`  
+-   `message`
 
 ## info
 
@@ -17,4 +18,4 @@ Shorcuts for console warnings
 
 **Parameters**
 
--   `message`  
+-   `message`

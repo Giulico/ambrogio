@@ -74,6 +74,8 @@ module.exports = {
 
     context: resolve(__dirname, '../src'),
 
+    devtool: (env.development ? '#source-map' : '#cheap-module-source-map'),
+
     module: {
         rules: [
             {
